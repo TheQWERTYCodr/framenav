@@ -2,18 +2,10 @@
 <head>
 <script src="//code.jquery.com/jquery-3.6.1.min.js"></script>
 <script src="//cdn.jsdelivr.net/npm/eruda" defer></script>
-<script>
-var x = $("#url")[0];
-var y = $("#btn")[0];
-var z = $("#frame")[0];
-y.onclick = function() {
-  z.src=x.value;
-}
-</script>
 </head>
 <body>
 <input id="url" type="text" />
-<button id="btn">go</button>
+<button id="btn" onclick="$("#frame")[0].src=$("#url")[0].value">go</button>
 <iframe id="frame" />
 </body>
 </html>
