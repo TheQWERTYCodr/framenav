@@ -3,9 +3,9 @@
 <script src="//code.jquery.com/jquery-3.6.1.min.js"></script>
 <script src="//cdn.jsdelivr.net/npm/eruda" defer></script>
 <script>
-var x = $("#url");
-var y = $("#btn");
-var z = $("#frame");
+var x = $("#url")[0];
+var y = $("#btn")[0];
+var z = $("#frame")[0];
 y.onclick = function() {
   z.location.href=x.value;
 }
