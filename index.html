@@ -1,0 +1,18 @@
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+<script>
+var x = $("#url");
+var y = $("#btn");
+var z = $("#frame");
+y.onclick = function() {
+  z.location.href=x.value;
+}
+</script>
+</head>
+<body>
+<input id="url" type="text" />
+<button id="btn">go</button>
+<iframe id="frame" />
+</body>
+</html>
